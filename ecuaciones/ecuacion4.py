@@ -4,7 +4,7 @@ import sympy
 from scipy import integrate
 from ecuaciones.funciones import graficar4
 
-def problema4():
+def problema4(x0):
     sympy.init_printing(use_latex='mathjax')
 
     x = sympy.Symbol('x')
@@ -14,5 +14,6 @@ def problema4():
 
     print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
 
-    graficar4()
+    graficar4(x0)
+
 

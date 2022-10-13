@@ -19,6 +19,7 @@ def graficar1(x0):
     solucion = odeint(fun,x0,T)
 
     plot(T,solucion)
+    savefig('grafico1.png')
     show()
 
 def graficar2(x0):
@@ -32,6 +33,7 @@ def graficar2(x0):
     solucion = odeint(fun,x0,T)
 
     plot(T,solucion)
+    savefig('grafico2.png')
     show()
 
 def graficar3(x0):
@@ -45,6 +47,7 @@ def graficar3(x0):
     solucion = odeint(fun,x0,T)
 
     plot(T,solucion)
+    savefig('grafico3.png')
     show()
 
 def graficar4(x0):
@@ -56,5 +59,6 @@ def graficar4(x0):
     solucion = odeint(fun,x0,T)
 
     plot(T,solucion)
+    savefig('grafico4.png')
     show()
 

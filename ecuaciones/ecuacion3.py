@@ -7,7 +7,7 @@ from ecuaciones.funciones import graficar3
 
 sympy.init_printing(use_latex='mathjax')
 
-def problema3():
+def problema3(x0):
     x = sympy.Symbol('x')
     y = sympy.Function('y')
 
@@ -15,5 +15,5 @@ def problema3():
 
     print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
 
-    graficar3()
+    graficar3(x0)
 

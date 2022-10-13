@@ -28,9 +28,9 @@ def iniciar():
            problema2()
 
         elif opcion == '3':
-           problema3()
+           problema3(5)
 
         elif opcion == '4':
-           problema4()
+           problema4(5)
         
         input("\nPresiona ENTER para continuar...")
