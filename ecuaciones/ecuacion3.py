@@ -13,8 +13,6 @@ def problema3():
 
     f = (2*(x-2)**2-y(x)/(x-2))
 
-    ec2 = sympy.Eq(y(x).diff(x), f)
-
     print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
 
     graficar3()

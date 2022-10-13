@@ -12,8 +12,6 @@ def problema4():
 
     f = ((3*x**2+y(x))/(2*x))
 
-    ec2 = sympy.Eq(y(x).diff(x), f)
-
     print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
 
     graficar4()
