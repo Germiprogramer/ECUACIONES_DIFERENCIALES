@@ -24,7 +24,8 @@ ec1 = sympy.Eq(y(x).diff(x), f)
 #print(sympy.solve(C_eq))
 #respuesta
 
-print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
+#print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
+
 
 
 
