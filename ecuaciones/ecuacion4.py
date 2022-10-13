@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sympy 
 from scipy import integrate
-import math
+
 
 sympy.init_printing(use_latex='mathjax')
 

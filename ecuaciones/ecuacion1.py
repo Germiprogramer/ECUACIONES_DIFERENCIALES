@@ -16,15 +16,12 @@ print("Ecuación1: " ,sympy.Eq(y(x).diff(x), f))
 
 ec1 = sympy.Eq(y(x).diff(x), f)
 
-#print(ec1)
+C_eq = sympy.Eq(ec1.lhs.subs(x, 3).subs(ics), ec1.rhs.subs(x, 3))
+print(C_eq)
 
-#C_eq = sympy.Eq(ec1.lhs.subs(x, 3).subs(ics), ec1.rhs.subs(x, 3))
-#print(C_eq)
-
-#print(sympy.solve(C_eq))
 #respuesta
 
-#print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
+print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
 
 
 
