@@ -1,7 +1,12 @@
 from matplotlib.pyplot import *
 import math
 from scipy.integrate import *
+import os
+import platform
 
+
+def limpiar_pantalla():
+    os.system('cls') if platform.system() == "Windows" else os.system('clear')
 
 def graficar1(x0):
 
@@ -45,7 +50,6 @@ def graficar3(x0):
 def graficar4(x0):
 
     T = range(-25,25,1)
-
 
     def fun(x,y):
         return ((3*x**2+y)/(2*x))

@@ -3,6 +3,7 @@ import numpy as np
 import sympy 
 from scipy import integrate
 import math
+from ecuaciones.funciones import graficar3
 
 sympy.init_printing(use_latex='mathjax')
 
@@ -16,4 +17,5 @@ def problema3():
 
     print("Respuesta: ", sympy.dsolve(y(x).diff(x) - f))
 
-problema3()
+    graficar3()
+

@@ -3,13 +3,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sympy 
 from scipy import integrate
+from ecuaciones.funciones import graficar1
 
 sympy.init_printing(use_latex='mathjax')
 
 x = sympy.Symbol('x')
 y = sympy.Function('y')
  
-def problema1():
+def problema1(x0):
     ics = {y(3): -1}
 
     f = (x**2*(y(x))-(y(x)))/((y(x))+1)
@@ -23,6 +24,10 @@ def problema1():
     #respuesta
 
     print("Respuesta: ", sympy.solve(C_eq))
+
+    graficar1(x0)
+
+
 
 
 
